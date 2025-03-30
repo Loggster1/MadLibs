@@ -10,23 +10,23 @@ import java.util.Scanner;
 public class MadLibs {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        File folder = new File("MadLibsDataFiles");
+        File folder = new File("MadLibsFiles");
 
-        File[] MadLibDataFiles = folder.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
+        File[] MadLibFiles = folder.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
 
         System.out.println("Let's play MadLibs");
 
-        for (int i = 0; i < MadLibDataFiles.length; i++) {
-            System.out.println((i + 1) + ". " + MadLibDataFiles[i].getName());
+        for (int i = 0; i < MadLibFiles.length; i++) {
+            System.out.println((i + 1) + ". " + MadLibFiles[i].getName());
         }
 
         System.out.print("Enter choice: ");
         int choice = scanner.nextInt();
         scanner.nextLine();
 
-        if (choice >= 1 && choice <= MadLibDataFiles.length) {
-            String selectedMadLibDataFile = MadLibDataFiles[choice - 1].getAbsolutePath();
-            String story = readMadLibStory(selectedMadLibDataFile);
+        if (choice >= 1 && choice <= MadLibFiles.length) {
+            String selectedMadLibFile = MadLibFiles[choice - 1].getAbsolutePath();
+            String story = readMadLibStory(selectedMadLibFile);
 
             if (story != null) {
                 System.out.println(story);
