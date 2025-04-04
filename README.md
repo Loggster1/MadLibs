@@ -28,7 +28,7 @@
 </details>
 
 # About The Project
-This is an interactive MadLibs game built in Java. Users will be prompted to enter different parts of speech (nouns, verbs, adjectives, etc.), and then a random story will be generated with those inputs. It's a great way to practice creativity and have some fun. Right now it doesn't have a GUI, so the user interacts with it via command line.
+This is an interactive MadLibs game built in Java. Users will be prompted to enter different words (nouns, verbs, adjectives, etc.), and then a story will be generated with those inputs. It's a great way to practice creativity and have some fun. Right now it doesn't have a GUI, so the user interacts with it via command line.
 
 # Features
 | Features | Description |
