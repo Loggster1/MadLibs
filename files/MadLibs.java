@@ -1,5 +1,5 @@
 /**
- * Logan Wallarab
+ * Loggster1
  * www.loggster.dev
  */
 import java.io.File;
